@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    /* background-color: #FFFCF4; */
+}
+:root{
+    --font-heding:"Sen", serif;
+    --primary-color:#FFB900;
+
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: "Poppins", serif;
+}
+a{
+    text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    min-width: 118px;
+    padding: 0 16px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 999px;
+    background: #171100;
+
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.header{
+    background-color:#FFFCF4;
+}
+.header.fixed{
+    position: sticky;
+    top: -28px;
+    z-index: 1;
+}
+.main-content{
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 48px);
+}
+.header .body{
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+}
+.nav{
+    margin-left: auto;
+}
+.nav ul{
+    display: flex;
+}
+.nav a{
+font-weight: 400;
+font-size: 1.6rem;
+letter-spacing: 0%;
+color:#5F5B53;
+padding: 8px 21px;
+position: relative;
+}
+.nav li.active a,
+.nav a:hover{
+    color: black;
+    text-shadow: 1px 0 0 currentColor;
+}
+.nav li.active a::after{
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 2px;
+    left: 21px;
+    bottom: 6px;
+    border-radius: 1px;
+    background: black;
+    display: block;
+}
+.header .btn-sign-up{
+    min-width: 144px;
+    margin-left: 49px;
+}
+.hero{
+    padding-top: 56px 0 65px 0;
+    background-color:#FFFCF4;
+}
+.hero .body{
+    display: flex;
+}
+/* been trai */
+.hero .media-block{
+    position: relative;
+    width: 48%;
+}
+.hero .media-block .img{
+    width: 470px;
+    height: 685px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.hero .hero-summary{
+    position: absolute;
+    bottom: 48px;
+    right: 0;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    width: 270px;
+    padding: 24px;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+.hero-summary .item{
+    display: flex;
+}
+.hero-summary .item + .item{
+    margin-top: 22px;
+}
+.hero-summary .icon{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF9E8;
+    display: flex;
+}
+.hero-summary .icon2{
+    background-color:#FCEFFF;
+}
+.hero-summary .icon3{
+    background: #EBEAFF;
+}
+.hero-summary .infor{
+    margin-left: 16px;
+}
+.hero-summary .label{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color:#5F5B53;
+}
+.hero-summary .title{
+color: black;
+font-weight: 600;
+font-size: 1.8rem;
+line-height: 30px;
+letter-spacing: 0%;
+}
+.hero .content-block{
+    width: 52%;
+    padding-top: 64px;
+    padding-left: 130px;
+}
+.hero .heading{
+    font-family: var(--font-heding);
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -1.16px;
+    
+}
+.hero .desc{
+    color: #5F5B53;
+    margin-top: 22px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+.hero .cta-group{
+    width: 180;
+    height: 64;
+    top: 118px;
+    left: 114px;
+    border-radius: 32px;
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+.hero-cta{
+    min-width: 180px;
+    line-height: 64px;
+    background-color: var(--primary-color);
+}
+.hero .watch-video{
+    margin-left: 28px;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.hero .watch-video .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.07);
+}
+.hero .watch-video span {
+    margin-left: 14px;
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+.hero .Recent{
+    margin-top: 48px;
+}
+.hero .stats{
+    margin-top: 8px;
+}
+.hero .stats strong{
+    color: #171100;
+    font-family: Sen;
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.23;
+    margin-right: 15px;
+}
+
+.hero .stats strong:nth-child(2){
+    margin-left: 28px;
+}
